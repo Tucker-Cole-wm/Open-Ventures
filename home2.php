@@ -38,11 +38,11 @@
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav" style="margin-top: 6px;">
         <li class="active"><a href="#">Home</a></li>
-        <li><a href="#">Articles</a></li>
+        <li><a href="/Open-Ventures/home2.php/">Articles</a></li>
   	<li><a href="#">Entrepenuership</a></li>
 	  <li><a href="#">Tech</a></li>
 	  <li><a href="#">Opprtinities</a></li> 
-    <h3 style="position: relative;float: right;bottom: 7px;left: 130px;color: white;font-family: cursive;">Open-Ventures</h3>
+    <h3 style="position: relative;float: right;bottom: 7px;left: 130px;color: white;font-family: cursive;">Open Ventures</h3>
 
       </ul>
       
@@ -55,7 +55,7 @@
 
                 </form>
       <ul class="nav navbar-nav navbar-right" style="margin-top: 6px;">
-        <li><a href="#"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
+        <li><a href="/Open-Ventures/login.php/"><span class="glyphicon glyphicon-user"></span> My Account</a></li>
       </ul>
     </div>
   </div>
