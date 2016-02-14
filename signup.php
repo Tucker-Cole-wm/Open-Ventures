@@ -1,5 +1,47 @@
 <?php
+require_once ('connect.php');
+$error = false;
+$success = false;
 
+if(@$_POST['signup']){
+
+    if(!$_POST['firstname']){
+        $error .= '<p>First name is required field!</p>';
+    }
+
+    if(!$_POST['lastname']){
+        $error .= '<p>Last name is required field!</p>';
+    }
+    if(!$_POST['username']){
+        $error .= '<p>Username is required field!</p>';
+    }
+    if(!$_POST['email']){
+        $error .= '<p>Email is required field!</p>';
+    }
+    if(!$_POST['password']){
+        $error .= '<p>Email is required field!</p>';
+    }
+    
+function register($conn) {
+    $username = $_POST['username'];
+    $password = sha1($_POST['password']);
+    $email = $_POST['email'];
+    $token = generateToken();
+    $sql = 'INSERT INTO users (username, password, email, token) VALUES (?, ?, ?, ?)';
+    $stmt = $conn->prepare($sql);
+    try {
+        if ($stmt->execute(array($username, $password, $email, $token))) {
+            setcookie('token', $token, 0, "/");
+            echo 'Account Registered';
+        }
+    }
+    catch (PDOException $e) {
+        echo $e->getMessage();
+        //echo 'Username or Email Already Registered';
+    }
+}
+
+}
 
 ?>
 
