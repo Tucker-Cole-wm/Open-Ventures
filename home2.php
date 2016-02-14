@@ -37,7 +37,7 @@
   <div class="container-fluid">
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav" style="margin-top: 6px;">
-        <li class="active"><a href="#">Home</a></li>
+        <li class="active"><a href="/Open-Ventures/home2.php/">Home</a></li>
         <li><a href="/Open-Ventures/home2.php/">Articles</a></li>
   	<li><a href="#">Entrepenuership</a></li>
 	  <li><a href="#">Tech</a></li>
